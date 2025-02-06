@@ -1,3 +1,4 @@
+'''pytest'''
 import pytest
 from src.factorial import Factorial, FactorialDeZero, FactorialNegatiu
 
