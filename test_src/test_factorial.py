@@ -1,5 +1,5 @@
 import pytest
-from src.factorial import Factorial, factorial_de_zero, factorial_negatiu
+from src.factorial import Factorial, FactorialDeZero, FactorialNegatiu
 
 def test_num_1():
     calculadora = Factorial()
@@ -16,12 +16,12 @@ def test_num_2():
 def test_num_0():
     calculadora = Factorial()
     
-    with pytest.raises(factorial_de_zero):
+    with pytest.raises(FactorialDeZero):
         assert calculadora.calcula_factorial(0) == 0
 
 def test_num_negatiu():
     calculadora = Factorial()
-    with pytest.raises(factorial_negatiu):
+    with pytest.raises(FactorialNegatiu):
         assert calculadora.calcula_factorial(-2) == 6
 
 
