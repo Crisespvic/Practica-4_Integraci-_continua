@@ -23,5 +23,4 @@ class Factorial():
             raise FactorialNegatiu('No hi ha factorials negatius')
         if num<=2:
             return num
-        else:
-            return num * self.calcula_factorial(num-1)
+        return num * self.calcula_factorial(num-1)
